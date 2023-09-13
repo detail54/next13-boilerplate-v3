@@ -1,6 +1,6 @@
 'use client'
 
-import { usePost } from '@/common/api/page/posts/postQuerys'
+import { usePost } from '../state/server/postQuerys'
 import React from 'react'
 
 interface IPostProps {

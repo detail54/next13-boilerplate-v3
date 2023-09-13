@@ -1,14 +1,12 @@
 'use client'
 
-import { usePosts } from '@/common/api/page/posts/postQuerys'
+import { usePosts } from '../state/server/postQuerys'
 import API_URL from '@/common/constant/apiUrl'
 import Link from 'next/link'
 import React, { Fragment } from 'react'
 
 const PostList = () => {
   const { data: posts, isLoading } = usePosts()
-
-  console.log('posts:::', posts)
 
   return (
     <div>

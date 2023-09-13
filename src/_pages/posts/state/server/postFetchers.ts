@@ -1,5 +1,5 @@
-import { api } from '../../api'
-import API_URL from '../../../constant/apiUrl'
+import { api } from '../../../../common/api/api'
+import API_URL from '../../../../common/constant/apiUrl'
 
 export const getPosts = async () => {
   const posts = await api<IPost[]>({

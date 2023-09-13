@@ -1,5 +1,5 @@
 import API_URL from '@/common/constant/apiUrl'
-import { useQuery } from '../../reactQuery'
+import { useQuery } from '@/common/api/reactQuery'
 import { getPosts, getPost } from './postFetchers'
 import getQueryKey from '@/common/utils/getQueryKey'
 

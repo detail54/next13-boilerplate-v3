@@ -1,5 +1,5 @@
 import APP_URL from '@/common/constant/appUrl'
-import Button from '@/components/atom/button'
+import Button from '@/common/components/atom/button'
 import Link from 'next/link'
 
 export default async function Home() {
