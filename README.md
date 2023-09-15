@@ -1,6 +1,6 @@
 # Next13 Boilerplate V3
 
-## stack
+## Dependencies
 
 ---
 
