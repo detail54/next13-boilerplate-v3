@@ -5,7 +5,7 @@ import getQueryKey from '@/common/utils/getQueryKey'
 
 export const usePosts = (onError?: TQueryErr) => {
   return useQuery<IPost[]>({
-    queryKey: getQueryKey(API_URL.POSTS, undefined),
+    queryKey: getQueryKey(API_URL.POSTS),
     queryFn: getPosts,
     onError,
   })
@@ -13,7 +13,7 @@ export const usePosts = (onError?: TQueryErr) => {
 
 export const usePost = (id: number, onError?: TQueryErr) => {
   return useQuery<IPost>({
-    queryKey: getQueryKey(`${API_URL.POSTS}/${id}`, undefined),
+    queryKey: getQueryKey(`${API_URL.POSTS}/${id}`),
     queryFn: () => getPost(id),
     onError,
   })

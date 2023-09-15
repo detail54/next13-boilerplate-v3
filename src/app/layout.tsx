@@ -3,6 +3,7 @@ import 'the-new-css-reset/css/reset.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Providers from '@/common/config/reactQuery/Providers'
+import Recoil from '@/common/config/recoil/Recoil'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,7 +39,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
       </head>
       <body className={inter.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Recoil>{children}</Recoil>
+        </Providers>
       </body>
     </html>
   )

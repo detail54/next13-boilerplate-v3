@@ -10,6 +10,7 @@
 - react v18.2.0
 - env-cmd v10.1.0
 - react-query v4.35.0 (react-query-devtools v4.35.0)
+- recoil v0.7.7
 - the-new-css-reset v1.9.0
 ```
 
@@ -62,7 +63,7 @@
     │       │   └── ....
     │       ├── state
     │       │   ├── client
-    │       │   │   └── ....
+    │       │   │   └── recoil.ts
     │       │   └── server
     │       │       ├── fetchers.ts
     │       │       └── querys.ts

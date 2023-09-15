@@ -9,7 +9,7 @@ export default async function Post({ params: { id } }: { params: { id: number } 
   const queryClient = getQueryClient()
   await queryClient.prefetchQuery(
     getQueryKey(`${API_URL.POSTS}/${id}`, undefined),
-    getPost(id),
+    () => getPost(id),
   )
   const dehydratedState = dehydrate(queryClient)
 

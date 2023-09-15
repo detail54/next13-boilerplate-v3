@@ -11,12 +11,15 @@ interface IReValidApi {
   option?: Omit<RequestInit, 'method' | 'next'>
 }
 
-type TQueryKey = [string, object | undefined]
+type TQueryKey = [string] | [string, object | undefined]
 
 interface IUseReactQueryProps {
   queryKey: TQueryKey
   queryFn: () => Promise<T>
   onError?: TQueryErr
   errorHandlers?: TErrorHandlers
-  options?: Omit<UseQueryOptions<T, AxiosError, T, TQueryKey>, 'queryKey' | 'onError'>
+  options?: Omit<
+    UseQueryOptions<T, AxiosError, T, TQueryKey>,
+    'queryKey' | 'onError'
+  >
 }
