@@ -11,6 +11,7 @@
 - env-cmd v10.1.0
 - react-query v4.35.0 (react-query-devtools v4.35.0)
 - recoil v0.7.7
+- vanilla-extract v1.13.0
 - the-new-css-reset v1.9.0
 ```
 
