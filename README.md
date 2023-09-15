@@ -147,7 +147,9 @@
 
 - the-new-css-reset적용하여 스타일 리셋 함.
 - 리셋 싫으면 라이브러리 지우고 노멀라이즈로 대체 하면됌.
--
+- vanilla-extract 사용.
+- global style은 app/global.css.ts 에만 작성.
+- 그외 각 컴포넌트 tsx파일과 같은 경로에 파일생성하여 작성.
 
 # etc...
 
