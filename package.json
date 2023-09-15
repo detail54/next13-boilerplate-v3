@@ -15,6 +15,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.35.0",
     "@tanstack/react-query-devtools": "^4.35.0",
+    "@vanilla-extract/css": "^1.13.0",
     "env-cmd": "^10.1.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@types/node": "^20.6.0",
     "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7"
+    "@types/react-dom": "^18.2.7",
+    "@vanilla-extract/next-plugin": "^2.3.0"
   }
 }

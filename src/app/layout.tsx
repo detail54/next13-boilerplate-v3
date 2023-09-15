@@ -1,4 +1,4 @@
-import './globals.css'
+import './global.css'
 import 'the-new-css-reset/css/reset.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
