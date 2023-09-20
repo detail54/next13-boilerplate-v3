@@ -13,13 +13,22 @@ interface IReValidApi {
 
 type TQueryKey = [string] | [string, object | undefined]
 
-interface IUseReactQueryProps {
+interface IUseQuery<T> {
   queryKey: TQueryKey
   queryFn: () => Promise<T>
   onError?: TQueryErr
   errorHandlers?: TErrorHandlers
+  options?: Omit<UseQueryOptions<T, Response, T, TQueryKey>, 'queryKey' | 'onError'>
+}
+
+interface IUseMutation<T, S> {
+  queryKey: TQueryKey
+  mutationFn: (data: T | S) => Promise<Response<T>>
+  updater?: (oldData: T, newData: S) => T
+  errorHandlers?: TErrorHandlers
+  onError?: TQueryErr
   options?: Omit<
-    UseQueryOptions<T, AxiosError, T, TQueryKey>,
-    'queryKey' | 'onError'
+    UseMutationOptions<Response, Response, T | S>,
+    'mutationFn' | 'onMutate' | 'onSettled' | 'onError'
   >
 }
